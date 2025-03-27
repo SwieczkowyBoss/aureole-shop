@@ -83,6 +83,7 @@ footer {
   text-align: center;
   max-width: 400px;
   padding: 40px;
+  position: relative;
 }
 
 form input, form button {
@@ -90,7 +91,9 @@ form input, form button {
   margin-top: 10px;
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 .product-page {
   display: flex;
@@ -109,4 +112,13 @@ form input, form button {
   padding: 20px;
   text-decoration: none;
   color: #a88c5f;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
 }
