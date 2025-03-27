@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auréole – Sklep ze świecami</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="overlay">
     <div class="overlay-content">
       <h1>Auréole – Już wkrótce</h1>
-      <p>Ręcznie tworzymy wyjątkowy świat zapachów. Powiadomimy Cię, gdy otworzymy drzwi do naszej świeczkowej kolekcji.</p>
+      <p>Nasza kolekcja świec zapachowych już niebawem zadebiutuje.</p>
       <form id="notify-form">
-        <input type="email" placeholder="Twój e-mail" required>
+        <input type="email" placeholder="Twój e-mail" required />
         <button type="submit">Powiadom mnie</button>
-        <p id="notify-confirmation" class="hidden">Dziękujemy za zaufanie. Powiadomimy Cię w odpowiednim momencie.</p>
+        <p id="notify-confirmation" class="hidden">Dziękujemy! Będziemy w kontakcie.</p>
       </form>
-      <span id="close-overlay">×</span>
     </div>
   </div>
 
   <header>
     <div class="logo">[Tutaj będzie logo marki]</div>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="index.html#products">Świece</a>
+      <a href="#">Zestawy</a>
+      <a href="#">O nas</a>
+      <a href="#">Kontakt</a>
+    </nav>
   </header>
 
   <main>
-    <section class="products">
-      <div class="product">
+    <section id="products" class="products">
+      <a href="product-velours-vanille.html" class="product-card">
         <img src="images/velours-vanille.jpg" alt="Velours Vanille">
         <h2>Velours Vanille</h2>
         <p>Wanilia madagaskarska i kremowe nuty</p>
         <span class="price">69 zł</span>
-        <button class="disabled">Wkrótce dostępne</button>
-      </div>
-      <div class="product">
+      </a>
+      <a href="product-bois-de-luxe.html" class="product-card">
         <img src="images/bois-de-luxe.jpg" alt="Bois de Luxe">
         <h2>Bois de Luxe</h2>
         <p>Drewno sandałowe, piżmo, bursztyn</p>
         <span class="price">89 zł</span>
-        <button class="disabled">Wkrótce dostępne</button>
-      </div>
-    </section>
-
-    <section class="instagram">
-      <h2>Instagram</h2>
-      <div class="placeholder">[Tutaj pojawią się zdjęcia z Instagrama]</div>
+      </a>
     </section>
   </main>
+
+  <footer>
+    <p>Auréole &copy; 2025 – Wszystkie prawa zastrzeżone</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
